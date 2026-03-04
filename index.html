@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sameer Alam | Senior Digital Marketing & Growth Strategy Leader</title>
+<meta name="description" content="Sameer Alam — Senior Digital Marketing Leader with 9+ years driving Technical SEO, PPC, AI Automation & D2C Growth. 4.2× ROAS · £3.5M Revenue · $500K+ Pipeline.">
+<meta name="keywords" content="Digital Marketing Expert, SEO Specialist, PPC Expert, AI Marketing Automation, D2C Growth Strategist, Performance Marketing, Sameer Alam">
+<meta name="author" content="Sameer Alam">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Sameer Alam | Senior Digital Marketing & Growth Strategy Leader">
+<meta property="og:description" content="9+ years scaling brands globally. 4.2× ROAS · £3.5M/month revenue · $500K+ pipeline generated.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        dark: { 950:'#040810', 900:'#070C1A', 800:'#0D1525', 700:'#111E35', 600:'#192840' },
+        mint: { DEFAULT:'#00E5A0', 500:'#00E5A0', 400:'#33EDB5', 300:'#66F2CA', glow:'rgba(0,229,160,0.15)' },
+        purple: { DEFAULT:'#7B5CF0', glow:'rgba(123,92,240,0.12)' },
+        electric: '#22D3EE',
+      },
+      fontFamily: { heading:['Plus Jakarta Sans','sans-serif'], body:['Inter','sans-serif'], mono:['JetBrains Mono','monospace'] },
+    }
+  }
+}
+</script>
+<style>
+:root {
+  --mint:#00E5A0; --purple:#7B5CF0; --blue:#22D3EE;
+  --bg-950:#000008; --bg-900:#00040C; --bg-800:#010912; --bg-700:#020C18;
+  --border:rgba(255,255,255,0.05); --border-mint:rgba(0,229,160,0.22);
+  --text-100:#F1F5F9; --text-200:#CBD5E1; --text-300:#8B9CB8; --text-400:#475569;
+}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+html{scroll-behavior:smooth}
+body{background:var(--bg-900);color:var(--text-100);font-family:'Inter',sans-serif;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.03em;line-height:1.15}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg-950)}
+::-webkit-scrollbar-thumb{background:var(--mint);border-radius:2px}
+::selection{background:rgba(0,229,160,0.2);color:#fff}
+
+/* NAV */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background 0.4s,backdrop-filter 0.4s,box-shadow 0.4s}
+#navbar.scrolled{background:rgba(0,2,10,0.96);backdrop-filter:blur(24px);box-shadow:0 1px 0 rgba(255,255,255,0.04)}
+.nav-link{position:relative;color:var(--text-300);font-size:0.875rem;font-weight:500;transition:color 0.3s;padding:4px 0}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--mint);border-radius:1px;transition:width 0.3s}
+.nav-link:hover{color:#fff}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-link.active{color:#fff}
+
+/* HERO */
+#heroCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,160,0.08);border:1px solid rgba(0,229,160,0.2);border-radius:100px;padding:6px 16px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;color:var(--mint);letter-spacing:0.05em}
+.hero-badge .dot{width:8px;height:8px;background:var(--mint);border-radius:50%;animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,229,160,0.4)}50%{opacity:0.8;box-shadow:0 0 0 6px rgba(0,229,160,0)}}
+.gradient-text{background:linear-gradient(135deg,#fff 0%,#00E5A0 50%,#7B5CF0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-cta-primary{display:inline-flex;align-items:center;gap:10px;background:var(--mint);color:#040810;font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.95rem;padding:14px 32px;border-radius:100px;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 0 0 0 rgba(0,229,160,0.4)}
+.hero-cta-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,229,160,0.35)}
+.hero-cta-primary:active{transform:translateY(0)}
+.hero-cta-ghost{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.95rem;padding:13px 30px;border-radius:100px;border:1px solid rgba(255,255,255,0.15);transition:border-color 0.2s,background 0.2s,transform 0.2s}
+.hero-cta-ghost:hover{border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.05);transform:translateY(-2px)}
+.stat-card{background:rgba(4,8,20,0.95);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:20px 24px;backdrop-filter:blur(20px);transition:border-color 0.3s,transform 0.3s}
+.stat-card:hover{border-color:rgba(0,229,160,0.35);transform:translateY(-3px)}
+.stat-value{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.75rem;letter-spacing:-0.04em;color:#fff}
+.stat-label{font-size:0.75rem;color:var(--text-300);font-weight:500;margin-top:2px}
+
+/* TICKER */
+.ticker-wrap{overflow:hidden;background:rgba(0,229,160,0.06);border-top:1px solid rgba(0,229,160,0.1);border-bottom:1px solid rgba(0,229,160,0.1)}
+.ticker-track{display:flex;width:max-content;animation:ticker 40s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.ticker-item{display:flex;align-items:center;gap:12px;padding:14px 48px;white-space:nowrap;font-size:0.85rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;color:var(--text-200)}
+.ticker-item .accent{color:var(--mint);font-weight:700}
+.ticker-sep{color:var(--text-400);font-size:1.2rem}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.section-label{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:0.75rem;font-weight:500;color:var(--mint);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px}
+.section-label::before{content:'';display:block;width:24px;height:2px;background:var(--mint);border-radius:1px}
+.section-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;color:#fff;margin-bottom:16px}
+.section-sub{font-size:1.05rem;color:var(--text-300);line-height:1.8;max-width:600px}
+
+/* CARDS */
+.card{background:#060D1A;border:1px solid rgba(255,255,255,0.07);border-radius:20px;transition:border-color 0.3s,transform 0.3s,box-shadow 0.3s}
+.card:hover{border-color:rgba(0,229,160,0.3);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,0.4),0 0 0 1px rgba(0,229,160,0.1)}
+
+/* SERVICE CARDS */
+.svc-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:20px;flex-shrink:0}
+.svc-icon.mint{background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.2)}
+.svc-icon.purple{background:rgba(123,92,240,0.1);border:1px solid rgba(123,92,240,0.2)}
+.svc-icon.blue{background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.2)}
+.svc-tag{display:inline-block;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.12);color:var(--mint);font-size:0.7rem;font-family:'JetBrains Mono',monospace;padding:3px 10px;border-radius:100px;margin-top:16px}
+
+/* SKILL BARS */
+.skill-bar{height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;margin-top:8px}
+.skill-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--mint),var(--purple));transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(0.16,1,0.3,1)}
+.skill-fill.animate{transform:scaleX(1)}
+
+/* TIMELINE */
+.timeline-line{position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--mint),var(--purple),transparent)}
+.timeline-dot{width:14px;height:14px;border-radius:50%;background:var(--mint);border:3px solid var(--bg-900);box-shadow:0 0 12px rgba(0,229,160,0.5);flex-shrink:0;margin-top:4px}
+
+/* PORTFOLIO CARDS */
+.portfolio-card{position:relative;overflow:hidden;border-radius:20px;background:#060D1A;border:1px solid rgba(255,255,255,0.07);transition:transform 0.3s,box-shadow 0.3s,border-color 0.3s}
+.portfolio-card:hover{transform:translateY(-6px);box-shadow:0 30px 80px rgba(0,0,0,0.5);border-color:var(--border-mint)}
+.portfolio-card .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,8,16,0.95) 0%,rgba(4,8,16,0.3) 60%,transparent 100%);transition:opacity 0.3s}
+.portfolio-card:hover .overlay{opacity:0.85}
+.metric-pill{display:inline-block;background:rgba(0,229,160,0.12);border:1px solid rgba(0,229,160,0.25);color:var(--mint);font-weight:700;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.75rem;padding:4px 12px;border-radius:100px}
+
+/* TECH TAGS */
+.tech-tag{display:inline-flex;align-items:center;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:var(--text-200);font-size:0.78rem;font-family:'JetBrains Mono',monospace;padding:6px 14px;border-radius:8px;transition:background 0.2s,border-color 0.2s,color 0.2s,transform 0.2s}
+.tech-tag:hover{background:rgba(0,229,160,0.08);border-color:rgba(0,229,160,0.25);color:var(--mint);transform:translateY(-2px)}
+
+/* CONTACT FORM */
+.form-input{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 18px;color:#fff;font-family:'Inter',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s,background 0.2s}
+.form-input:focus{border-color:rgba(0,229,160,0.4);background:rgba(0,229,160,0.03)}
+.form-input::placeholder{color:var(--text-400)}
+.form-label{font-size:0.8rem;font-weight:600;color:var(--text-300);margin-bottom:6px;display:block;font-family:'Plus Jakarta Sans',sans-serif}
+
+/* MOBILE NAV */
+#mobileMenu{display:none;position:fixed;inset:0;background:rgba(0,2,10,0.99);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:40px}
+#mobileMenu.open{display:flex}
+.mobile-nav-link{font-family:'Plus Jakarta Sans',sans-serif;font-size:2rem;font-weight:700;color:var(--text-200);transition:color 0.2s}
+.mobile-nav-link:hover{color:#fff}
+
+/* SCROLL REVEAL — starts visible, JS adds animation class */
+.reveal{opacity:1;transform:translateY(0);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal-left{opacity:1;transform:translateX(0);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal-right{opacity:1;transform:translateX(0);transition:opacity 0.7s ease,transform 0.7s ease}
+.js-ready .reveal{opacity:0;transform:translateY(30px)}
+.js-ready .reveal.visible{opacity:1;transform:translateY(0)}
+.js-ready .reveal-left{opacity:0;transform:translateX(-30px)}
+.js-ready .reveal-left.visible{opacity:1;transform:translateX(0)}
+.js-ready .reveal-right{opacity:0;transform:translateX(30px)}
+.js-ready .reveal-right.visible{opacity:1;transform:translateX(0)}
+
+/* GLOW BG */
+.glow-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+
+/* FOOTER */
+.footer-link{color:var(--text-400);font-size:0.85rem;transition:color 0.2s}
+.footer-link:hover{color:var(--mint)}
+
+/* COUNT ANIM */
+@keyframes countUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.count-anim{animation:countUp 0.5s ease forwards}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ NAV ═══════════════════════════════════════ -->
+<nav id="navbar" class="w-full py-5 px-6">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-3 group" aria-label="Sameer Alam Home">
+      <div class="w-10 h-10 rounded-xl flex items-center justify-center font-heading font-800 text-lg" style="background:linear-gradient(135deg,#00E5A0,#7B5CF0);color:#040810;font-weight:800">SA</div>
+      <div>
+        <div class="font-heading font-semibold text-sm text-white leading-none">Sameer Alam</div>
+        <div class="text-xs font-mono" style="color:var(--mint);font-size:0.65rem;letter-spacing:0.05em">SENIOR DIGITAL MARKETER</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <!-- CTA + Hamburger -->
+    <div class="flex items-center gap-2">
+      <a href="https://drive.google.com/file/d/1jJkSzVa2HrFCOVWqfiYkemxSikXH1Llk/view?usp=drive_link" target="_blank" rel="noopener noreferrer" title="Download Resume" class="hidden md:inline-flex items-center gap-1.5 text-xs font-semibold font-heading px-3.5 py-2 rounded-full" style="background:transparent;color:#C4B5FD;border:1px solid rgba(123,92,240,0.4);transition:border-color 0.2s,background 0.2s" onmouseover="this.style.borderColor='rgba(123,92,240,0.9)';this.style.background='rgba(123,92,240,0.12)'" onmouseout="this.style.borderColor='rgba(123,92,240,0.4)';this.style.background='transparent'">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7B5CF0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
+      <a href="https://drive.google.com/drive/folders/1tkykQgfqm_2O8x16JQ-Q5qpr3n9eEqhV" target="_blank" rel="noopener noreferrer" title="View Real Results" class="hidden md:inline-flex items-center gap-1.5 text-xs font-semibold font-heading px-3.5 py-2 rounded-full" style="background:transparent;color:#6EE7C7;border:1px solid rgba(0,229,160,0.35);transition:border-color 0.2s,background 0.2s" onmouseover="this.style.borderColor='rgba(0,229,160,0.8)';this.style.background='rgba(0,229,160,0.08)'" onmouseout="this.style.borderColor='rgba(0,229,160,0.35)';this.style.background='transparent'">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Results
+      </a>
+      <a href="https://drive.google.com/file/d/185MBTa3CkM2hmS8SsE8bUYQdJTnFZfwE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" title="Watch Video Intro" class="hidden md:inline-flex items-center gap-1.5 text-xs font-semibold font-heading px-3.5 py-2 rounded-full" style="background:rgba(239,68,68,0.07);color:#FCA5A5;border:1px solid rgba(239,68,68,0.3);transition:border-color 0.2s,background 0.2s" onmouseover="this.style.borderColor='rgba(239,68,68,0.7)';this.style.background='rgba(239,68,68,0.15)'" onmouseout="this.style.borderColor='rgba(239,68,68,0.3)';this.style.background='rgba(239,68,68,0.07)'">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#EF4444"><circle cx="12" cy="12" r="10" fill="none" stroke="#EF4444" stroke-width="2"/><polygon points="10,8 16,12 10,16" fill="#EF4444"/></svg>
+        Video
+      </a>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 text-sm font-semibold font-heading px-5 py-2.5 rounded-full transition-all" style="background:var(--mint);color:#040810;font-weight:700;margin-left:4px">
+        Hire Me <span>→</span>
+      </a>
+      <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-white transition-transform" id="bar1"></span>
+        <span class="block w-4 h-0.5 ml-auto transition-opacity" style="background:var(--mint)" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-white transition-transform" id="bar3"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+  <button id="closeMenu" class="absolute top-6 right-6 text-white text-2xl" aria-label="Close menu">✕</button>
+  <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+  <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">Services</a>
+  <a href="#portfolio" class="mobile-nav-link" onclick="closeMobileMenu()">Portfolio</a>
+  <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">Experience</a>
+  <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden" style="background:#000008">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+  <!-- Glow orbs -->
+  <div class="glow-orb w-96 h-96 -top-20 -left-20" style="background:rgba(0,229,160,0.08)"></div>
+  <div class="glow-orb w-80 h-80 top-1/2 right-0" style="background:rgba(123,92,240,0.1)"></div>
+
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 pt-28 pb-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: Content -->
+      <div>
+        <!-- Badge -->
+        <div class="hero-badge mb-8 reveal">
+          <span class="dot"></span>
+          Available for Hire · Remote · Global
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-extrabold leading-none mb-6 reveal" style="transition-delay:0.1s">
+          I Don't Run Ads.<br>
+          I Build <span class="gradient-text">Revenue<br>Machines.</span>
+        </h1>
+
+        <!-- Sub -->
+        <p class="text-lg reveal" style="color:var(--text-300);line-height:1.8;max-width:540px;transition-delay:0.2s">
+          Senior Digital Marketing & Growth Architect with <strong style="color:#fff">9+ years</strong> engineering Advanced Marketing Funnels, AI-powered Sales Pipelines, and D2C Revenue Systems — delivering <strong style="color:var(--mint)">7× ROAS</strong> across <strong style="color:#fff">US, UK, UAE, Canada & APAC</strong>.
+        </p>
+
+        <!-- Catchy sub-tagline -->
+        <div class="mt-5 reveal" style="transition-delay:0.25s">
+          <p class="text-sm font-mono" style="color:var(--mint);border-left:2px solid var(--mint);padding-left:14px;line-height:1.9">
+            Market Research → Business Planning → Funnel Architecture<br>
+            → Sales Pipeline → Revenue at Scale. <strong style="color:#fff">End-to-End.</strong>
+          </p>
+        </div>
+
+        <!-- CTAs Row 1 -->
+        <div class="flex flex-wrap gap-4 mt-10 reveal" style="transition-delay:0.3s">
+          <a href="https://drive.google.com/drive/folders/1tkykQgfqm_2O8x16JQ-Q5qpr3n9eEqhV" target="_blank" rel="noopener noreferrer" class="hero-cta-primary">
+            View Real Results →
+          </a>
+          <a href="https://wa.me/916395076874" target="_blank" rel="noopener noreferrer" class="hero-cta-ghost" style="display:inline-flex;align-items:center;gap:8px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Me
+          </a>
+        </div>
+
+        <!-- CTAs Row 2 -->
+        <div class="flex flex-wrap gap-3 mt-4 reveal" style="transition-delay:0.4s">
+          <a href="https://drive.google.com/file/d/1jJkSzVa2HrFCOVWqfiYkemxSikXH1Llk/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#E2E8F0;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.875rem;padding:11px 24px;border-radius:100px;border:1px solid rgba(123,92,240,0.45);transition:border-color 0.2s,background 0.2s,transform 0.2s;text-decoration:none" onmouseover="this.style.borderColor='rgba(123,92,240,0.9)';this.style.background='rgba(123,92,240,0.1)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(123,92,240,0.45)';this.style.background='transparent';this.style.transform='translateY(0)'">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7B5CF0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="https://drive.google.com/drive/folders/1tkykQgfqm_2O8x16JQ-Q5qpr3n9eEqhV" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#E2E8F0;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.875rem;padding:11px 24px;border-radius:100px;border:1px solid rgba(0,229,160,0.35);transition:border-color 0.2s,background 0.2s,transform 0.2s;text-decoration:none" onmouseover="this.style.borderColor='rgba(0,229,160,0.8)';this.style.background='rgba(0,229,160,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(0,229,160,0.35)';this.style.background='transparent';this.style.transform='translateY(0)'">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            View Real Results
+          </a>
+          <a href="https://drive.google.com/file/d/185MBTa3CkM2hmS8SsE8bUYQdJTnFZfwE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.08);color:#FCA5A5;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.875rem;padding:11px 24px;border-radius:100px;border:1px solid rgba(239,68,68,0.3);transition:border-color 0.2s,background 0.2s,transform 0.2s;text-decoration:none" onmouseover="this.style.borderColor='rgba(239,68,68,0.7)';this.style.background='rgba(239,68,68,0.15)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(239,68,68,0.3)';this.style.background='rgba(239,68,68,0.08)';this.style.transform='translateY(0)'">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#EF4444"><circle cx="12" cy="12" r="10" fill="none" stroke="#EF4444" stroke-width="2"/><polygon points="10,8 16,12 10,16" fill="#EF4444"/></svg>
+            Watch Video Intro
+          </a>
+        </div>
+
+        <!-- Availability strip -->
+        <div class="flex flex-wrap gap-3 mt-10 reveal" style="transition-delay:0.4s">
+          <span class="tech-tag">Full-Time</span>
+          <span class="tech-tag">Contract</span>
+          <span class="tech-tag">Fractional CMO</span>
+          <span class="tech-tag">EST · PST · GMT · GST · AEST</span>
+        </div>
+      </div>
+
+      <!-- Right: 3D Pixel Astronaut + Stat Chips -->
+      <div class="reveal-right" style="transition-delay:0.2s;position:relative;min-height:520px">
+        <canvas id="charCanvas" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+        <div style="position:absolute;inset:0;pointer-events:none">
+          <div style="position:absolute;top:4%;left:2%;background:rgba(0,229,160,0.07);border:1px solid rgba(0,229,160,0.22);border-radius:14px;padding:10px 14px;backdrop-filter:blur(16px)">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;color:#00E5A0;letter-spacing:-0.04em">+70%</div>
+            <div style="font-size:0.6rem;color:#8B9CB8;font-weight:500;margin-top:2px">D2C Revenue · 2 Months</div>
+          </div>
+          <div style="position:absolute;top:4%;right:2%;background:rgba(123,92,240,0.07);border:1px solid rgba(123,92,240,0.22);border-radius:14px;padding:10px 14px;backdrop-filter:blur(16px)">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;color:#A78BFA;letter-spacing:-0.04em">7×</div>
+            <div style="font-size:0.6rem;color:#8B9CB8;font-weight:500;margin-top:2px">Peak ROAS Delivered</div>
+          </div>
+          <div style="position:absolute;top:41%;left:0%;background:rgba(34,211,238,0.07);border:1px solid rgba(34,211,238,0.2);border-radius:14px;padding:10px 14px;backdrop-filter:blur(16px)">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;color:#22D3EE;letter-spacing:-0.04em">£3.5M</div>
+            <div style="font-size:0.6rem;color:#8B9CB8;font-weight:500;margin-top:2px">Monthly Revenue</div>
+          </div>
+          <div style="position:absolute;top:41%;right:0%;background:rgba(0,229,160,0.07);border:1px solid rgba(0,229,160,0.22);border-radius:14px;padding:10px 14px;backdrop-filter:blur(16px)">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;color:#00E5A0;letter-spacing:-0.04em">$500K+</div>
+            <div style="font-size:0.6rem;color:#8B9CB8;font-weight:500;margin-top:2px">Pipeline Generated</div>
+          </div>
+          <div style="position:absolute;bottom:4%;left:2%;background:rgba(123,92,240,0.07);border:1px solid rgba(123,92,240,0.22);border-radius:14px;padding:10px 14px;backdrop-filter:blur(16px)">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;color:#A78BFA;letter-spacing:-0.04em">100K+</div>
+            <div style="font-size:0.6rem;color:#8B9CB8;font-weight:500;margin-top:2px">Organic Users/Month</div>
+          </div>
+          <div style="position:absolute;bottom:4%;right:2%;background:rgba(34,211,238,0.07);border:1px solid rgba(34,211,238,0.2);border-radius:14px;padding:10px 14px;backdrop-filter:blur(16px)">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.4rem;color:#22D3EE;letter-spacing:-0.04em">9+</div>
+            <div style="font-size:0.6rem;color:#8B9CB8;font-weight:500;margin-top:2px">Years Global Impact</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Trust Bar -->
+    <div class="mt-20 pt-10 border-t reveal" style="border-color:rgba(255,255,255,0.06);transition-delay:0.5s">
+      <p class="text-xs mb-4" style="color:var(--text-400);letter-spacing:0.08em;text-transform:uppercase;font-family:'JetBrains Mono',monospace">Brands & Platforms I've Grown</p>
+      <div class="flex flex-wrap gap-6 items-center">
+        <span class="trust-logo">Phitku.com</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">FW Homestores</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">NameSilo</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">Whispering Monks</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">Oruphones</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-logo">Eonixmedia</span>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.trust-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:0.85rem;color:var(--text-400);letter-spacing:0.02em;transition:color 0.2s;cursor:default}
+.trust-logo:hover{color:var(--text-200)}
+.trust-sep{color:var(--text-400);font-size:0.5rem}
+</style>
+
+<!-- ═══════════════════════════════════════ TICKER ═══════════════════════════════════════ -->
+<div class="ticker-wrap py-0">
+  <div class="ticker-track">
+    <div class="ticker-item"><span class="accent">+70%</span> D2C Revenue Growth <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">4.2× ROAS</span> Delivered at Scale <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">£3.5M/month</span> Revenue Generated <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">$500K+</span> Pipeline Created <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">+320%</span> Organic Traffic <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">-85%</span> Reporting Time Saved <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">100K+</span> Organic Users/Month <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">$1.9M</span> Revenue Uplift <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">+6,900%</span> E-commerce Growth <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">15+</span> Client Accounts Managed <span class="ticker-sep">◆</span></div>
+    <!-- Duplicate for seamless loop -->
+    <div class="ticker-item"><span class="accent">+70%</span> D2C Revenue Growth <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">4.2× ROAS</span> Delivered at Scale <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">£3.5M/month</span> Revenue Generated <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">$500K+</span> Pipeline Created <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">+320%</span> Organic Traffic <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">-85%</span> Reporting Time Saved <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">100K+</span> Organic Users/Month <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">$1.9M</span> Revenue Uplift <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">+6,900%</span> E-commerce Growth <span class="ticker-sep">◆</span></div>
+    <div class="ticker-item"><span class="accent">15+</span> Client Accounts Managed <span class="ticker-sep">◆</span></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
+<section id="about" class="relative py-28 px-6 overflow-hidden" style="background:#00050F">
+  <div class="glow-orb w-96 h-96 top-0 right-0 opacity-50" style="background:rgba(123,92,240,0.08)"></div>
+
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Photo + Stats -->
+      <div class="reveal-left">
+        <div class="relative">
+          <!-- Real Photo with teal treatment -->
+          <div class="relative rounded-3xl overflow-hidden" style="max-width:420px;border:2px solid rgba(0,229,160,0.2);box-shadow:0 0 60px rgba(0,229,160,0.1),0 30px 80px rgba(0,0,0,0.5)">
+            <!-- Photo -->
+            <img src="sameer-alam.jpg" alt="Sameer Alam — Senior Digital Marketing & Growth Strategy Leader" style="width:100%;display:block;object-fit:cover;object-position:center top;filter:contrast(1.05) saturate(0.9)" loading="eager">
+            <!-- Teal color treatment overlay -->
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,229,160,0.08) 0%,rgba(123,92,240,0.05) 50%,transparent 100%);mix-blend-mode:screen;pointer-events:none"></div>
+            <!-- Bottom gradient with info -->
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(to top,rgba(4,8,16,0.95) 0%,rgba(4,8,16,0.6) 60%,transparent 100%)">
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.1rem;color:#fff">Sameer Alam</div>
+              <div style="font-size:0.72rem;color:#00E5A0;font-family:'JetBrains Mono',monospace;letter-spacing:0.06em;margin-top:3px">SENIOR DIGITAL MARKETING LEADER</div>
+              <div style="display:flex;gap:16px;margin-top:12px">
+                <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:10px;padding:8px 14px;border:1px solid rgba(255,255,255,0.08)">
+                  <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1rem;color:#00E5A0">9+</div>
+                  <div style="font-size:0.6rem;color:#8B9CB8;margin-top:1px">Years</div>
+                </div>
+                <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:10px;padding:8px 14px;border:1px solid rgba(255,255,255,0.08)">
+                  <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1rem;color:#7B5CF0">7×</div>
+                  <div style="font-size:0.6rem;color:#8B9CB8;margin-top:1px">ROAS</div>
+                </div>
+                <div style="text-align:center;background:rgba(255,255,255,0.06);border-radius:10px;padding:8px 14px;border:1px solid rgba(255,255,255,0.08)">
+                  <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1rem;color:#22D3EE">15+</div>
+                  <div style="font-size:0.6rem;color:#8B9CB8;margin-top:1px">Clients</div>
+                </div>
+              </div>
+            </div>
+            <!-- Corner badge -->
+            <div class="hero-badge" style="position:absolute;top:16px;right:16px">
+              <span class="dot"></span>
+              Available Now
+            </div>
+          </div>
+
+          <!-- Floating badge: Available -->
+          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 hero-badge" style="white-space:nowrap">
+            <span class="dot"></span>
+            Open to New Opportunities
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="reveal-right">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Your Brand's Next<br><span class="gradient-text">Unfair Advantage</span></h2>
+
+        <!-- Hyper-realistic tagline -->
+        <div class="mb-6 p-4 rounded-2xl" style="background:rgba(0,229,160,0.05);border:1px solid rgba(0,229,160,0.12)">
+          <p class="text-sm font-semibold italic" style="color:var(--mint);font-family:'Plus Jakarta Sans',sans-serif;line-height:1.7">"From Zero Traffic to £3.5M/Month. From Strategy to 7× ROAS. I don't just manage campaigns — I architect entire growth ecosystems."</p>
+        </div>
+
+        <p class="mb-5" style="color:var(--text-200);line-height:1.9;font-size:0.95rem">
+          I'm a <strong style="color:#fff">Senior Digital Marketing & Growth Architecture Leader</strong> with 9+ years engineering full-stack revenue systems — from deep <strong style="color:var(--mint)">Market Research & Competitive Intelligence</strong> to advanced <strong style="color:var(--mint)">Business Planning</strong>, high-converting <strong style="color:var(--mint)">Marketing Funnel Architecture</strong>, and end-to-end <strong style="color:var(--mint)">Sales Pipeline Creation</strong>.
+        </p>
+        <p class="mb-8" style="color:var(--text-300);line-height:1.9;font-size:0.9rem">
+          I've scaled D2C revenue <strong style="color:#fff">+70% in 2 months</strong>, grown e-commerce from <strong style="color:var(--mint)">£50K → £3.5M/month</strong>, generated <strong style="color:var(--mint)">$500K+ pipeline</strong> in Year 1, hit <strong style="color:var(--mint)">100K+ organic users/month in 3 months</strong>, and delivered <strong style="color:var(--mint)">7× ROAS</strong> via AI-powered multi-channel performance systems. I operate where strategy meets execution — globally and remotely.
+        </p>
+
+        <!-- Key facts -->
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          <div class="flex items-center gap-3">
+            <span class="text-lg">🌍</span>
+            <div>
+              <div class="text-sm font-semibold text-white">Worldwide Remote Ready</div>
+              <div class="text-xs" style="color:var(--text-400)">EST · PST · GMT · GST · AEST</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-lg">💼</span>
+            <div>
+              <div class="text-sm font-semibold text-white">Work Modes</div>
+              <div class="text-xs" style="color:var(--text-400)">Full-Time · Contract · Fractional</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-lg">🎓</span>
+            <div>
+              <div class="text-sm font-semibold text-white">BCA Graduate</div>
+              <div class="text-xs" style="color:var(--text-400)">Computer Applications, 2022</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-lg">🗣️</span>
+            <div>
+              <div class="text-sm font-semibold text-white">Multilingual</div>
+              <div class="text-xs" style="color:var(--text-400)">English · Hindi · Urdu · Arabic</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="space-y-4 mb-8">
+          <h3 class="text-sm font-semibold uppercase tracking-widest" style="color:var(--text-400);font-family:'JetBrains Mono',monospace">Core Proficiency</h3>
+          <div class="space-y-3">
+            <div class="skill-item">
+              <div class="flex justify-between text-sm mb-1"><span class="text-white font-medium">SEO / Technical SEO</span><span style="color:var(--mint)" class="font-mono font-semibold">99%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:0.99" data-width="0.99"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between text-sm mb-1"><span class="text-white font-medium">Performance Marketing</span><span style="color:var(--mint)" class="font-mono font-semibold">97%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.97"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between text-sm mb-1"><span class="text-white font-medium">AI & Marketing Automation</span><span style="color:var(--mint)" class="font-mono font-semibold">95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between text-sm mb-1"><span class="text-white font-medium">Paid Media / PPC</span><span style="color:var(--mint)" class="font-mono font-semibold">94%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.94"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between text-sm mb-1"><span class="text-white font-medium">D2C Growth Strategy</span><span style="color:var(--mint)" class="font-mono font-semibold">92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="flex justify-between text-sm mb-1"><span class="text-white font-medium">Data Analytics & BI</span><span style="color:var(--mint)" class="font-mono font-semibold">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="#contact" class="hero-cta-primary text-sm" style="padding:12px 28px">Get In Touch →</a>
+          <a href="https://drive.google.com/file/d/1jJkSzVa2HrFCOVWqfiYkemxSikXH1Llk/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="hero-cta-ghost text-sm" style="padding:11px 26px;display:inline-flex;align-items:center;gap:8px;border-color:rgba(123,92,240,0.45);color:#C4B5FD">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7B5CF0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="https://drive.google.com/file/d/185MBTa3CkM2hmS8SsE8bUYQdJTnFZfwE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,0.07);color:#FCA5A5;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.875rem;padding:11px 24px;border-radius:100px;border:1px solid rgba(239,68,68,0.3);transition:border-color 0.2s,background 0.2s,transform 0.2s;text-decoration:none" onmouseover="this.style.borderColor='rgba(239,68,68,0.7)';this.style.background='rgba(239,68,68,0.15)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='rgba(239,68,68,0.3)';this.style.background='rgba(239,68,68,0.07)';this.style.transform='translateY(0)'">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#EF4444"><circle cx="12" cy="12" r="10" fill="none" stroke="#EF4444" stroke-width="2"/><polygon points="10,8 16,12 10,16" fill="#EF4444"/></svg>
+            Watch Video Intro
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ SERVICES ═══════════════════════════════════════ -->
+<section id="services" class="relative py-28 px-6 overflow-hidden" style="background:#000008">
+  <div class="glow-orb w-96 h-96 top-1/4 left-0 opacity-40" style="background:rgba(0,229,160,0.07)"></div>
+  <div class="glow-orb w-80 h-80 bottom-0 right-1/4" style="background:rgba(123,92,240,0.07)"></div>
+
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label justify-center">Advanced Digital Marketing Services 2026</div>
+      <h2 class="section-title">From Strategy to Scale —<br><span class="gradient-text">I Do It All</span></h2>
+      <p class="section-sub mx-auto text-center">Market research. Business planning. Funnel architecture. Sales pipelines. Paid media. Agentic AI. GEO. The complete 2026 growth system your brand needs.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Service NEW: Market Research -->
+      <div class="card p-7 reveal" style="transition-delay:0s;border-color:rgba(0,229,160,0.22)">
+        <div class="svc-icon mint">🔬</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Market Research & Competitive Intelligence</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-200)">Deep market analysis, audience persona mapping, competitor gap identification, and TAM/SAM/SOM sizing. I uncover the insights that form the bedrock of every winning strategy — before a single dollar is spent on ads.</p>
+        <div><span class="svc-tag">SEMrush</span> <span class="svc-tag">Ahrefs</span> <span class="svc-tag">BigQuery</span></div>
+      </div>
+
+      <!-- Service NEW: Business Planning -->
+      <div class="card p-7 reveal" style="transition-delay:0.05s;border-color:rgba(123,92,240,0.22)">
+        <div class="svc-icon purple">📋</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Business Planning & Go-To-Market Strategy</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-200)">End-to-end GTM planning — channel selection, ICP definition, pricing strategy, OKR framework, and 12-month growth roadmaps aligned to P&L. Strategy that works for investors, boards, and boots-on-the-ground execution.</p>
+        <div><span class="svc-tag">OKR Framework</span> <span class="svc-tag">P&L Alignment</span> <span class="svc-tag">GTM</span></div>
+      </div>
+
+      <!-- Service NEW: Advanced Funnels -->
+      <div class="card p-7 reveal" style="transition-delay:0.1s;border-color:rgba(34,211,238,0.22)">
+        <div class="svc-icon blue">🌊</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Advanced Marketing Funnel Architecture</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-200)">Multi-stage funnel design — from awareness to retention — with AI-personalized touchpoints, dynamic retargeting, and CRO-optimised landing pages. Engineered for compounding revenue, not one-time conversions. 7× ROAS proven.</p>
+        <div><span class="svc-tag">Meta Advantage+</span> <span class="svc-tag">Google PMax</span> <span class="svc-tag">CRO</span></div>
+      </div>
+
+      <!-- Service NEW: Sales Pipeline -->
+      <div class="card p-7 reveal" style="transition-delay:0.15s;border-color:rgba(0,229,160,0.22)">
+        <div class="svc-icon mint">🎯</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Advanced Sales & Lead Pipeline Creation</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-200)">End-to-end B2B/B2C revenue pipelines — lead capture, multi-touch nurture sequences, CRM automation, MQL→SQL acceleration (+37% speed), and full pipeline-to-revenue reporting. Generated $500K+ pipeline in Year 1 at Eonixmedia.</p>
+        <div><span class="svc-tag">HubSpot</span> <span class="svc-tag">Salesforce</span> <span class="svc-tag">n8n</span></div>
+      </div>
+
+      <!-- Service 1 -->
+      <div class="card p-7 reveal" style="transition-delay:0.2s">
+        <div class="svc-icon mint">🔍</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Technical SEO & Site Architecture</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-200)">Transform your site into a search engine powerhouse with data-led crawl architecture, E-E-A-T schema, Core Web Vitals optimization, and topical authority mapping. Achieved Ahrefs Site Health 80 → 92 and +55% organic revenue.</p>
+        <div><span class="svc-tag">Screaming Frog</span> <span class="svc-tag">Ahrefs</span> <span class="svc-tag">GSC</span></div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="card p-7 reveal" style="transition-delay:0.1s">
+        <div class="svc-icon purple">📊</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">PPC & Paid Media Management</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Drive measurable ROI across Google PMax/Search, Meta Advantage+, Amazon DSP, Snapchat, TikTok, and LinkedIn — with peak 7× ROAS and proven multi-channel strategies across Tier-1 global markets.</p>
+        <div><span class="svc-tag">Google Ads</span> <span class="svc-tag">Meta Ads</span> <span class="svc-tag">Amazon DSP</span></div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="card p-7 reveal" style="transition-delay:0.15s">
+        <div class="svc-icon blue">🤖</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">AI Marketing Automation</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Build intelligent automation pipelines with n8n, Make.com, Flowise, and OpenAI API — eliminating 78%+ manual workload, enabling scale without headcount, and automating lead nurturing end-to-end.</p>
+        <div><span class="svc-tag">n8n</span> <span class="svc-tag">Make.com</span> <span class="svc-tag">OpenAI GPT-4</span></div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="card p-7 reveal" style="transition-delay:0.2s">
+        <div class="svc-icon mint">🚀</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">D2C Growth & Funnel Strategy</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Architect full-funnel D2C revenue engines with multi-channel attribution, CAC optimization, and conversion-focused customer journeys. Scaled revenue +6,900% for FW Homestores (£50K → £3.5M/month).</p>
+        <div><span class="svc-tag">Shopify</span> <span class="svc-tag">Triple Whale</span> <span class="svc-tag">Northbeam</span></div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="card p-7 reveal" style="transition-delay:0.25s">
+        <div class="svc-icon purple">💬</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">WhatsApp API & CRM Automation</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Deploy conversational commerce at scale with WhatsApp Business API + GPT-4 — handling 500+ daily queries with 94% automated resolution. Reduced response latency by 65% and boosted conversions +45%.</p>
+        <div><span class="svc-tag">WhatsApp API</span> <span class="svc-tag">HubSpot</span> <span class="svc-tag">Salesforce</span></div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="card p-7 reveal" style="transition-delay:0.3s">
+        <div class="svc-icon blue">🧪</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">A/B Testing & CRO</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Increase conversion rates through systematic experimentation: landing page splits, meta-title testing, checkout funnel optimization, and UX-led CRO — delivered +27% Add-to-Cart rate for FW Homestores.</p>
+        <div><span class="svc-tag">GTM</span> <span class="svc-tag">BigQuery</span> <span class="svc-tag">GA4</span></div>
+      </div>
+
+      <!-- Service 7 -->
+      <div class="card p-7 reveal" style="transition-delay:0.05s">
+        <div class="svc-icon mint">✍️</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Content Strategy & Topical Clustering</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Build topical authority through semantic keyword graphs, cluster-based content architecture (200+ cluster pages), and AI-assisted content calendars — scaling organic sessions from 10K to 50K/month (+400%).</p>
+        <div><span class="svc-tag">Surfer SEO</span> <span class="svc-tag">Ahrefs</span> <span class="svc-tag">SEMrush</span></div>
+      </div>
+
+      <!-- Service 8 -->
+      <div class="card p-7 reveal" style="transition-delay:0.1s">
+        <div class="svc-icon purple">📈</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Growth Analytics & Business Intelligence</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Turn data into decisions with GA4 + BigQuery + Looker Studio dashboards, LSTM predictive retention models, and OKR-aligned P&L reporting with ±3% accuracy — eliminating 85% of manual reporting workload.</p>
+        <div><span class="svc-tag">BigQuery</span> <span class="svc-tag">Looker Studio</span> <span class="svc-tag">Python</span></div>
+      </div>
+
+      <!-- Service 9 -->
+      <div class="card p-7 reveal" style="transition-delay:0.15s">
+        <div class="svc-icon blue">📱</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Social Media & Community Growth</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Build communities and drive organic reach across Instagram, LinkedIn, TikTok, YouTube, & Snapchat — growing organic reach +85% and community engagement +60% in just 8 weeks with multi-format content strategy.</p>
+        <div><span class="svc-tag">Meta Suite</span> <span class="svc-tag">Hootsuite</span> <span class="svc-tag">Buffer</span></div>
+      </div>
+
+      <!-- Service 10 -->
+      <div class="card p-7 reveal" style="transition-delay:0.2s">
+        <div class="svc-icon mint">📞</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">AI Cold Calling & Voice Systems</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Deploy AI-powered outbound systems using Vapi.ai + ElevenLabs — human-like voice AI handling hundreds of daily calls with automated follow-up sequences, lead scoring, and CRM sync. 94% automated resolution rate.</p>
+        <div><span class="svc-tag">Vapi.ai</span> <span class="svc-tag">ElevenLabs</span> <span class="svc-tag">OpenAI</span></div>
+      </div>
+
+      <!-- Service 11 -->
+      <div class="card p-7 reveal" style="transition-delay:0.25s">
+        <div class="svc-icon purple">🛒</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Amazon & E-Commerce Advertising</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Scale e-commerce revenue with Amazon DSP, Dynamic Remarketing, Shopping ads, and marketplace SEO — proven from £50K to £3.5M monthly revenue with a unified attribution model delivering 3.8× blended ROAS.</p>
+        <div><span class="svc-tag">Amazon DSP</span> <span class="svc-tag">Snap Ads</span> <span class="svc-tag">TikTok Ads</span></div>
+      </div>
+
+      <!-- Service 12 -->
+      <div class="card p-7 reveal" style="transition-delay:0.3s">
+        <div class="svc-icon blue">🎯</div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Cross-Channel Attribution & Tracking</h3>
+        <p class="text-sm leading-relaxed" style="color:var(--text-300)">Implement server-side tracking, Meta CAPI, GTM SS + GA4 — recovering 28%+ untracked conversions post-iOS 14.5, directly improving budget allocation accuracy and ROAS reporting across all channels.</p>
+        <div><span class="svc-tag">Meta CAPI</span> <span class="svc-tag">GTM SS</span> <span class="svc-tag">GA4</span></div>
+      </div>
+
+    </div>
+
+    <!-- ── 2026 FRONTIER SERVICES ── -->
+    <div class="mt-14 mb-10 reveal">
+      <div class="flex items-center gap-4">
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(0,229,160,0.25))"></div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.2);border-radius:100px;padding:6px 20px">
+          <span style="width:7px;height:7px;background:var(--mint);border-radius:50%;display:inline-block;animation:pulse-dot 2s infinite"></span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.7rem;font-weight:500;color:var(--mint);letter-spacing:0.1em;text-transform:uppercase">2026 Frontier Capabilities</span>
+        </div>
+        <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(0,229,160,0.25),transparent)"></div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- NEW: GEO / AEO -->
+      <div class="card p-7 reveal" style="transition-delay:0s;border-color:rgba(0,229,160,0.28);background:linear-gradient(135deg,rgba(0,229,160,0.04),rgba(15,28,48,1))">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
+          <div class="svc-icon mint" style="margin-bottom:0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><path d="M2 12h20"/></svg>
+          </div>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--mint);background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.2);border-radius:4px;padding:2px 8px;letter-spacing:0.05em">NEW 2026</span>
+        </div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Generative Engine Optimization (GEO/AEO)</h3>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--text-200)">Get your brand cited by ChatGPT, Gemini, Perplexity, and Claude. I optimize your digital presence — content, schema, authority signals — so AI search engines recommend you over competitors. The next frontier beyond traditional SEO.</p>
+        <div><span class="svc-tag">LLM Visibility</span> <span class="svc-tag">Schema Pro</span> <span class="svc-tag">E-E-A-T</span></div>
+      </div>
+
+      <!-- NEW: Agentic AI -->
+      <div class="card p-7 reveal" style="transition-delay:0.05s;border-color:rgba(123,92,240,0.28);background:linear-gradient(135deg,rgba(123,92,240,0.04),rgba(15,28,48,1))">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
+          <div class="svc-icon purple" style="margin-bottom:0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B5CF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/><path d="M6 10h.01M18 10h.01"/></svg>
+          </div>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#A78BFA;background:rgba(123,92,240,0.1);border:1px solid rgba(123,92,240,0.2);border-radius:4px;padding:2px 8px;letter-spacing:0.05em">NEW 2026</span>
+        </div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Agentic AI Campaign Management</h3>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--text-200)">Deploy autonomous AI agents that self-optimize campaigns in real-time — adjusting bids, rotating creatives, reallocating budgets, and personalizing offers per user without manual input. I build and manage these systems so your campaigns run 24/7 at peak efficiency.</p>
+        <div><span class="svc-tag">n8n Agents</span> <span class="svc-tag">OpenAI API</span> <span class="svc-tag">Make.com</span></div>
+      </div>
+
+      <!-- NEW: Privacy-First CDP -->
+      <div class="card p-7 reveal" style="transition-delay:0.1s;border-color:rgba(34,211,238,0.28);background:linear-gradient(135deg,rgba(34,211,238,0.04),rgba(15,28,48,1))">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
+          <div class="svc-icon blue" style="margin-bottom:0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#67E8F9;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.2);border-radius:4px;padding:2px 8px;letter-spacing:0.05em">NEW 2026</span>
+        </div>
+        <h3 class="font-heading font-bold text-lg text-white mb-3">Privacy-First Data & CDP Architecture</h3>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--text-200)">Future-proof your marketing stack as third-party cookies disappear. I build first-party data systems, customer data platforms (CDPs), and identity resolution frameworks — turning your audience into a proprietary asset that feeds AI models and drives better targeting.</p>
+        <div><span class="svc-tag">Segment CDP</span> <span class="svc-tag">Server-Side GTM</span> <span class="svc-tag">Meta CAPI</span></div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-14 reveal">
+      <a href="#contact" class="hero-cta-primary inline-flex" style="font-size:1rem;padding:16px 40px">
+        Let's Build Your Growth Engine →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ PORTFOLIO ═══════════════════════════════════════ -->
+<section id="portfolio" class="relative py-28 px-6 overflow-hidden" style="background:#00050F">
+  <div class="glow-orb w-80 h-80 top-20 right-0" style="background:rgba(0,229,160,0.06)"></div>
+
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label justify-center">Case Studies</div>
+      <h2 class="section-title">Real Results from<br><span class="gradient-text">Real Campaigns</span></h2>
+      <p class="section-sub mx-auto text-center">Every number below is verified, real, and won through strategy, data, and relentless execution.</p>
+    </div>
+
+    <!-- Career Highlights Bar -->
+    <div class="grid md:grid-cols-3 gap-6 mb-16 reveal">
+      <div class="card p-8 text-center">
+        <div class="text-4xl font-heading font-extrabold mb-2" style="color:var(--mint)">+6,900%</div>
+        <div class="text-sm font-semibold text-white mb-1">E-commerce Revenue Growth</div>
+        <div class="text-xs" style="color:var(--text-400)">£50K → £3.5M/month</div>
+      </div>
+      <div class="card p-8 text-center">
+        <div class="text-4xl font-heading font-extrabold mb-2" style="color:#7B5CF0">$1.9M</div>
+        <div class="text-sm font-semibold text-white mb-1">Revenue Uplift</div>
+        <div class="text-xs" style="color:var(--text-400)">Across 15+ managed client accounts</div>
+      </div>
+      <div class="card p-8 text-center">
+        <div class="text-4xl font-heading font-extrabold mb-2" style="color:#22D3EE">100K+</div>
+        <div class="text-sm font-semibold text-white mb-1">Organic Users/Month</div>
+        <div class="text-xs" style="color:var(--text-400)">Achieved in 12 months at Oruphones</div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Case Study 1 -->
+      <div class="portfolio-card reveal" style="transition-delay:0.05s">
+        <img src="https://placehold.co/600x380/0D1525/00E5A0?text=D2C+Revenue+Scaling" alt="Phitku.com D2C Growth Case Study" class="w-full object-cover" style="height:220px" loading="lazy">
+        <div class="overlay"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <span class="metric-pill mb-3">+70% Revenue · 3.8× ROAS</span>
+          <h3 class="font-heading font-bold text-lg text-white mb-1">Phitku.com — D2C Scaling</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.6)">AI-led WhatsApp automation + multi-channel D2C funnels. Scaled brand revenue in first 2 months via AI-driven performance marketing across 4 paid channels.</p>
+          <div class="flex gap-2 flex-wrap"><span class="text-xs px-2 py-1 rounded" style="background:rgba(0,229,160,0.1);color:var(--mint)">WhatsApp API</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(0,229,160,0.1);color:var(--mint)">Meta Ads</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(0,229,160,0.1);color:var(--mint)">AI Automation</span></div>
+        </div>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="portfolio-card reveal" style="transition-delay:0.1s">
+        <img src="https://placehold.co/600x380/0D1525/7B5CF0?text=SEO+%2B+CRO+E-Commerce" alt="FW Homestores SEO & Revenue Growth" class="w-full object-cover" style="height:220px" loading="lazy">
+        <div class="overlay"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <span class="metric-pill mb-3" style="background:rgba(123,92,240,0.15);border-color:rgba(123,92,240,0.3);color:#7B5CF0">+6,900% Revenue Growth</span>
+          <h3 class="font-heading font-bold text-lg text-white mb-1">FW Homestores — UK E-Commerce</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.6)">Integrated SEO + CRO + local intent optimization scaling revenue from £50K to £3.5M/month. Most profitable 12-month period in company history.</p>
+          <div class="flex gap-2 flex-wrap"><span class="text-xs px-2 py-1 rounded" style="background:rgba(123,92,240,0.1);color:#7B5CF0">Technical SEO</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(123,92,240,0.1);color:#7B5CF0">CRO</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(123,92,240,0.1);color:#7B5CF0">Schema</span></div>
+        </div>
+      </div>
+
+      <!-- Case Study 3 -->
+      <div class="portfolio-card reveal" style="transition-delay:0.15s">
+        <img src="https://placehold.co/600x380/0D1525/22D3EE?text=Technical+SEO+25K+URLs" alt="NameSilo Technical SEO Modernization" class="w-full object-cover" style="height:220px" loading="lazy">
+        <div class="overlay"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <span class="metric-pill mb-3" style="background:rgba(34,211,238,0.12);border-color:rgba(34,211,238,0.25);color:#22D3EE">+55% Organic Revenue</span>
+          <h3 class="font-heading font-bold text-lg text-white mb-1">NameSilo — US Domain Registrar SEO</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.6)">25,000-URL technical SEO modernization — delivering +55% organic revenue, +69% organic traffic, and +33% conversion rate. Highest growth in company history.</p>
+          <div class="flex gap-2 flex-wrap"><span class="text-xs px-2 py-1 rounded" style="background:rgba(34,211,238,0.1);color:#22D3EE">Python SEO</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(34,211,238,0.1);color:#22D3EE">BigQuery</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(34,211,238,0.1);color:#22D3EE">Ahrefs</span></div>
+        </div>
+      </div>
+
+      <!-- Case Study 4 -->
+      <div class="portfolio-card reveal" style="transition-delay:0.2s">
+        <img src="https://placehold.co/600x380/0D1525/00E5A0?text=AI+Growth+Stack" alt="Eonixmedia AI Growth Stack" class="w-full object-cover" style="height:220px" loading="lazy">
+        <div class="overlay"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <span class="metric-pill mb-3">$500K+ Pipeline · Year 1</span>
+          <h3 class="font-heading font-bold text-lg text-white mb-1">Eonixmedia — AI Growth Consultancy</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.6)">Founded AI-first growth consultancy generating $500K+ inbound pipeline via SEO-intuitive content, AI funnel intelligence, and automation-led retargeting for Tier-1 US/UK clients.</p>
+          <div class="flex gap-2 flex-wrap"><span class="text-xs px-2 py-1 rounded" style="background:rgba(0,229,160,0.1);color:var(--mint)">n8n + Flowise</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(0,229,160,0.1);color:var(--mint)">GA4 APIs</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(0,229,160,0.1);color:var(--mint)">RAG</span></div>
+        </div>
+      </div>
+
+      <!-- Case Study 5 -->
+      <div class="portfolio-card reveal" style="transition-delay:0.25s">
+        <img src="https://placehold.co/600x380/0D1525/7B5CF0?text=Multi-Client+Growth" alt="Whispering Monks Agency SEO" class="w-full object-cover" style="height:220px" loading="lazy">
+        <div class="overlay"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <span class="metric-pill mb-3" style="background:rgba(123,92,240,0.15);border-color:rgba(123,92,240,0.3);color:#7B5CF0">$1.9M Revenue Uplift</span>
+          <h3 class="font-heading font-bold text-lg text-white mb-1">Whispering Monks — Agency</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.6)">Managed 15+ concurrent accounts across SaaS, Retail & Travel — delivering 4.5× SEO ROI, -28% CAC, and $1.9M revenue uplift. Automated onboarding from 24h → 90 minutes.</p>
+          <div class="flex gap-2 flex-wrap"><span class="text-xs px-2 py-1 rounded" style="background:rgba(123,92,240,0.1);color:#7B5CF0">HubSpot</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(123,92,240,0.1);color:#7B5CF0">Make.com</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(123,92,240,0.1);color:#7B5CF0">LinkedIn Ads</span></div>
+        </div>
+      </div>
+
+      <!-- Case Study 6 -->
+      <div class="portfolio-card reveal" style="transition-delay:0.3s">
+        <img src="https://placehold.co/600x380/0D1525/22D3EE?text=100K%2B+Organic+Users" alt="Oruphones Organic Growth SEO" class="w-full object-cover" style="height:220px" loading="lazy">
+        <div class="overlay"></div>
+        <div class="absolute inset-0 p-6 flex flex-col justify-end">
+          <span class="metric-pill mb-3" style="background:rgba(34,211,238,0.12);border-color:rgba(34,211,238,0.25);color:#22D3EE">100K+ Users/Month</span>
+          <h3 class="font-heading font-bold text-lg text-white mb-1">Oruphones — Consumer Electronics</h3>
+          <p class="text-xs leading-relaxed mb-3" style="color:rgba(255,255,255,0.6)">Built scalable SEO program ranking 30+ high-volume keywords in Google Top 3 — driving 100K+ organic users/month, a +320% growth milestone within 12 months via domain authority engine.</p>
+          <div class="flex gap-2 flex-wrap"><span class="text-xs px-2 py-1 rounded" style="background:rgba(34,211,238,0.1);color:#22D3EE">Link Building</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(34,211,238,0.1);color:#22D3EE">Schema</span><span class="text-xs px-2 py-1 rounded" style="background:rgba(34,211,238,0.1);color:#22D3EE">SERP CRO</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ EXPERIENCE ═══════════════════════════════════════ -->
+<section id="experience" class="relative py-28 px-6 overflow-hidden" style="background:#000008">
+  <div class="glow-orb w-80 h-80 bottom-0 left-1/3" style="background:rgba(123,92,240,0.07)"></div>
+<style>
+/* ── Experience Card Redesign ── */
+.exp-card { background:#060D1A; border:1px solid rgba(255,255,255,0.06); border-radius:20px; overflow:hidden; }
+.exp-card-header { padding:24px 28px 20px; border-bottom:1px solid rgba(255,255,255,0.05); }
+.exp-role { font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:1.1rem; color:#fff; letter-spacing:-0.02em; }
+.exp-company { font-family:'Plus Jakarta Sans',sans-serif; font-weight:600; font-size:0.875rem; }
+.exp-loc { font-size:0.75rem; color:var(--text-400); font-family:'Inter',sans-serif; margin-top:2px; }
+.exp-date { font-family:'JetBrains Mono',monospace; font-size:0.72rem; font-weight:500; padding:6px 14px; border-radius:100px; white-space:nowrap; flex-shrink:0; }
+.exp-chips { display:flex; flex-wrap:wrap; gap:8px; padding:16px 28px; border-bottom:1px solid rgba(255,255,255,0.04); background:rgba(255,255,255,0.015); }
+.exp-chip { font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:0.78rem; padding:5px 14px; border-radius:100px; }
+.exp-bullets { padding:20px 28px; display:flex; flex-direction:column; gap:12px; }
+.exp-bullet { display:grid; grid-template-columns:18px 1fr; gap:10px; align-items:start; }
+.exp-bullet-icon { width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.55rem; flex-shrink:0; margin-top:2px; }
+.exp-bullet-text { font-size:0.875rem; color:#94A3B8; line-height:1.75; }
+.exp-bullet-text strong { color:#E2E8F0; font-weight:600; }
+</style>
+
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label justify-center">Track Record</div>
+      <h2 class="section-title">9+ Years of<br><span class="gradient-text">Global Impact</span></h2>
+      <p class="section-sub mx-auto text-center mt-4">Every role. Every result. Every metric — earned, not claimed.</p>
+    </div>
+
+    <div class="relative pl-10">
+      <div class="timeline-line"></div>
+
+      <!-- ── Exp 1: Phitku.com ── -->
+      <div class="relative mb-8 reveal">
+        <div class="timeline-dot absolute -left-12 top-6"></div>
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">Performance Marketing Lead</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:var(--mint)">Phitku.com</span>
+                  <span class="exp-loc">D2C Brand · India · Remote</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.2)">Jan 2026 – Present</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(0,229,160,0.1);color:var(--mint);border:1px solid rgba(0,229,160,0.2)">+70% Revenue in 2 Months</span>
+            <span class="exp-chip" style="background:rgba(123,92,240,0.1);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">3.8× Blended ROAS</span>
+            <span class="exp-chip" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.18)">+45% Conversion Rate</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">4 Paid Channels</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Scaled brand revenue by <strong>+70% within the first 2 months</strong> through AI-led growth systems, WhatsApp API automation pipelines, and full-funnel D2C performance marketing across 4 paid channels simultaneously.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Engineered a <strong>WhatsApp Business API automation pipeline</strong> using Meta API + Make.com + GPT-4 — reducing response latency by 65% and boosting the overall conversion rate by <strong>+45%</strong>.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Architected high-converting D2C revenue funnels across <strong>Amazon DSP · Snap Ads · Google PMax</strong> — unified through a custom attribution model that achieved a <strong>3.8× blended ROAS</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Exp 2: Eonixmedia ── -->
+      <div class="relative mb-8 reveal">
+        <div class="timeline-dot absolute -left-12 top-6" style="background:#7B5CF0;box-shadow:0 0 12px rgba(123,92,240,0.5)"></div>
+        <div class="exp-card" style="border-color:rgba(123,92,240,0.15)">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">Founder & Growth Strategist</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:#7B5CF0">Eonixmedia</span>
+                  <span class="exp-loc">AI Growth Consultancy · India · Remote</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(123,92,240,0.08);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">Feb 2025 – Jan 2026</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(123,92,240,0.1);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">$500K+ Inbound Pipeline</span>
+            <span class="exp-chip" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.18)">4.2× ROAS · 6.8% CTR</span>
+            <span class="exp-chip" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.18)">62% → 82% Retention</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">+$18K Avg Client LTV</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(123,92,240,0.15)"><span style="color:#7B5CF0">▲</span></div>
+              <p class="exp-bullet-text">Founded an AI-first growth consultancy that generated <strong>$500K+ inbound pipeline in Year 1</strong> through SEO-intuitive content strategy, AI funnel intelligence, and automation-led retargeting for Tier-1 US/UK clients.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(123,92,240,0.15)"><span style="color:#7B5CF0">▲</span></div>
+              <p class="exp-bullet-text">Built predictive <strong>LSTM + Cohort Analysis retention models</strong> in Python — elevating client retention from 62% to 82% (+32%) across 10 months, and increasing average client LTV by <strong>+$18K</strong>.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(123,92,240,0.15)"><span style="color:#7B5CF0">▲</span></div>
+              <p class="exp-bullet-text">Orchestrated cross-channel Performance Marketing campaigns (Google/PMax + Meta Advantage+ + LinkedIn Sponsored) achieving <strong>6.8% blended CTR</strong> and <strong>4.2× ROAS</strong> — 2.1× above the category benchmark.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Exp 3: NameSilo ── -->
+      <div class="relative mb-8 reveal">
+        <div class="timeline-dot absolute -left-12 top-6" style="background:#22D3EE;box-shadow:0 0 12px rgba(34,211,238,0.5)"></div>
+        <div class="exp-card" style="border-color:rgba(34,211,238,0.13)">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">SEO Manager</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:#22D3EE">NameSilo</span>
+                  <span class="exp-loc">Domain Registrar · United States · Remote</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.2)">Jan 2024 – Feb 2025</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(34,211,238,0.1);color:#22D3EE;border:1px solid rgba(34,211,238,0.2)">+55% Organic Revenue</span>
+            <span class="exp-chip" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.18)">+69% Organic Traffic</span>
+            <span class="exp-chip" style="background:rgba(123,92,240,0.08);color:#7B5CF0;border:1px solid rgba(123,92,240,0.18)">+33% Conversion Rate</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">25,000 URLs Modernised</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(34,211,238,0.12)"><span style="color:#22D3EE">▲</span></div>
+              <p class="exp-bullet-text">Directed a <strong>25,000-URL technical SEO modernisation</strong> that delivered +55% organic revenue, +69% organic traffic, and +33% conversion rate YoY — the <strong>highest growth in company history</strong>.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(34,211,238,0.12)"><span style="color:#22D3EE">▲</span></div>
+              <p class="exp-bullet-text">Built a <strong>Python + OpenAI GPT-4 Keyword-Gap System</strong> (regex parsing · semantic clustering · intent classification) that uncovered 1,400 untapped queries, contributing <strong>+180K incremental monthly visits</strong>.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(34,211,238,0.12)"><span style="color:#22D3EE">▲</span></div>
+              <p class="exp-bullet-text">Deployed <strong>AI Search Readiness</strong> framework (structured Q&A schema · Speakable markup · entity reinforcement) achieving <strong>+20% AI-surface visibility</strong> across Google SGE, Gemini & Perplexity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Exp 4: FW Homestores ── -->
+      <div class="relative mb-8 reveal">
+        <div class="timeline-dot absolute -left-12 top-6"></div>
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">SEO Manager</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:var(--mint)">FW Homestores</span>
+                  <span class="exp-loc">E-commerce Retail · United Kingdom · Remote</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.2)">Nov 2022 – Nov 2023</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(0,229,160,0.1);color:var(--mint);border:1px solid rgba(0,229,160,0.2)">£50K → £3.5M/Month</span>
+            <span class="exp-chip" style="background:rgba(123,92,240,0.1);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">+6,900% Revenue Growth</span>
+            <span class="exp-chip" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.18)">+27% Add-to-Cart Rate</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">+210% GBP Visibility</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Scaled e-commerce revenue from <strong>£50K to £3.5M/month — a +6,900% increase</strong> — through integrated SEO + CRO + local intent optimisation. This became the brand's <strong>most profitable 12-month period</strong> on record.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Boosted <strong>Google Business Profile visibility by +210%</strong>, driving +128% call conversions and measurable in-store footfall uplift through hyperlocal keyword targeting and consistent GBP post cadence.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Enhanced Core Web Vitals (LCP 3.8s → 1.9s via image CDN + lazy load) and automated A/B testing via GTM + BigQuery — delivering a <strong>+27% improvement in Add-to-Cart rate</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Exp 5: Whispering Monks ── -->
+      <div class="relative mb-8 reveal">
+        <div class="timeline-dot absolute -left-12 top-6" style="background:#7B5CF0;box-shadow:0 0 12px rgba(123,92,240,0.5)"></div>
+        <div class="exp-card" style="border-color:rgba(123,92,240,0.15)">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">Account & SEO Manager</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:#7B5CF0">Whispering Monks</span>
+                  <span class="exp-loc">Full-Service Marketing Agency · India</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(123,92,240,0.08);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">Jan 2020 – Oct 2022</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(123,92,240,0.1);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">$1.9M Revenue Uplift</span>
+            <span class="exp-chip" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.18)">4.5× SEO ROI</span>
+            <span class="exp-chip" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.18)">-28% CAC</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">15+ Concurrent Accounts</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(123,92,240,0.15)"><span style="color:#7B5CF0">▲</span></div>
+              <p class="exp-bullet-text">Managed <strong>15+ concurrent client accounts</strong> across SaaS, Retail & Travel verticals — delivering 4.5× SEO ROI, -28% CAC, and a combined <strong>$1.9M revenue uplift</strong> across the portfolio.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(123,92,240,0.15)"><span style="color:#7B5CF0">▲</span></div>
+              <p class="exp-bullet-text">Automated client onboarding workflows using <strong>Make.com + Zapier + HubSpot</strong>, compressing onboarding time from 24 hours to 90 minutes — enabling the agency to scale to 15+ clients without additional ops headcount.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(123,92,240,0.15)"><span style="color:#7B5CF0">▲</span></div>
+              <p class="exp-bullet-text">Built <strong>GA4 + Looker Studio forecast dashboards</strong> with ±3% accuracy using BigQuery ML — enabling data-driven budget allocation and improving average campaign ROAS by <strong>+31%</strong> across all accounts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Exp 6: Oruphones ── -->
+      <div class="relative mb-8 reveal">
+        <div class="timeline-dot absolute -left-12 top-6" style="background:#22D3EE;box-shadow:0 0 12px rgba(34,211,238,0.5)"></div>
+        <div class="exp-card" style="border-color:rgba(34,211,238,0.13)">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">SEO Manager</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:#22D3EE">Oruphones</span>
+                  <span class="exp-loc">Consumer Electronics · India</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.2)">Sep 2018 – Dec 2019</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(34,211,238,0.1);color:#22D3EE;border:1px solid rgba(34,211,238,0.2)">100K+ Organic Users/Month</span>
+            <span class="exp-chip" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.18)">+320% Growth in 3 Months</span>
+            <span class="exp-chip" style="background:rgba(123,92,240,0.08);color:#7B5CF0;border:1px solid rgba(123,92,240,0.18)">DA 28 → 61 (+118%)</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">30+ Top-3 Keywords</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(34,211,238,0.12)"><span style="color:#22D3EE">▲</span></div>
+              <p class="exp-bullet-text">Built a scalable SEO program ranking <strong>30+ high-volume keywords in Google Top 3</strong> (90K+ monthly searches), driving <strong>100K+ organic users/month</strong> — achieving a +320% growth milestone in just 3 months.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(34,211,238,0.12)"><span style="color:#22D3EE">▲</span></div>
+              <p class="exp-bullet-text">Constructed a domain authority engine via <strong>120+ contextual backlinks from DR 70+ domains</strong> (digital PR + guest posts + HARO outreach) — elevating Domain Authority from <strong>28 → 61 (+118%)</strong>.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(34,211,238,0.12)"><span style="color:#22D3EE">▲</span></div>
+              <p class="exp-bullet-text">Applied <strong>content velocity modelling + internal link sculpting</strong> across the silo architecture — lifting page authority distribution by +44% and reducing new-page ranking lag by an average of <strong>3 weeks</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Exp 7: Antargyan ── -->
+      <div class="relative reveal">
+        <div class="timeline-dot absolute -left-12 top-6"></div>
+        <div class="exp-card">
+          <div class="exp-card-header">
+            <div class="flex flex-wrap gap-4 justify-between items-start">
+              <div>
+                <div class="exp-role">Digital Marketing Manager</div>
+                <div class="flex items-center gap-2 mt-1 flex-wrap">
+                  <span class="exp-company" style="color:var(--mint)">Antargyan Cloudworks LLP</span>
+                  <span class="exp-loc">Technology Consultancy · India</span>
+                </div>
+              </div>
+              <span class="exp-date" style="background:rgba(0,229,160,0.08);color:var(--mint);border:1px solid rgba(0,229,160,0.2)">Feb 2017 – Aug 2018</span>
+            </div>
+          </div>
+          <div class="exp-chips">
+            <span class="exp-chip" style="background:rgba(0,229,160,0.1);color:var(--mint);border:1px solid rgba(0,229,160,0.2)">+42% QoQ Lead Volume</span>
+            <span class="exp-chip" style="background:rgba(123,92,240,0.1);color:#7B5CF0;border:1px solid rgba(123,92,240,0.2)">2× YoY Revenue Growth</span>
+            <span class="exp-chip" style="background:rgba(34,211,238,0.08);color:#22D3EE;border:1px solid rgba(34,211,238,0.18)">+33% Site Engagement</span>
+            <span class="exp-chip" style="background:rgba(255,255,255,0.05);color:var(--text-200);border:1px solid rgba(255,255,255,0.08)">-26% CPL via A/B Testing</span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Executed an integrated digital marketing roadmap spanning <strong>SEO + Google Ads PPC + Email Automation + Social Media</strong> — increasing qualified lead volume by <strong>+42% QoQ</strong> and driving 2× YoY revenue growth.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Reduced average CPL by <strong>-26%</strong> through systematic ad copy A/B testing, audience exclusion lists, and negative keyword optimisation across the Google Search Network — managing <strong>£30K+ monthly ad spend</strong>.</p>
+            </div>
+            <div class="exp-bullet">
+              <div class="exp-bullet-icon" style="background:rgba(0,229,160,0.15)"><span style="color:var(--mint)">▲</span></div>
+              <p class="exp-bullet-text">Improved site engagement rate by <strong>+33%</strong> via Core Web Vitals analysis and technical audit remediation across <strong>50+ high-traffic landing pages</strong>; implemented OKR framework aligning all deliverables to business P&L.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ TECH STACK ═══════════════════════════════════════ -->
+<section id="skills" class="relative py-28 px-6 overflow-hidden" style="background:#00050F">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label justify-center">Tech Arsenal</div>
+      <h2 class="section-title">Tools & Technologies<br><span class="gradient-text">I Master Daily</span></h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="card p-8 reveal">
+        <h3 class="font-heading font-bold text-white mb-2">🔍 SEO & Technical Search</h3>
+        <p class="text-xs mb-5" style="color:var(--text-400)">Site architecture, crawl optimization, entity SEO</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-tag">Screaming Frog</span><span class="tech-tag">Ahrefs</span><span class="tech-tag">SEMrush</span><span class="tech-tag">GSC</span><span class="tech-tag">Moz</span><span class="tech-tag">Core Web Vitals</span><span class="tech-tag">Log File Analysis</span><span class="tech-tag">Schema Markup</span><span class="tech-tag">E-E-A-T</span><span class="tech-tag">Surfer SEO</span><span class="tech-tag">SGE / Perplexity AI</span><span class="tech-tag">Entity SEO</span><span class="tech-tag">Majestic</span>
+        </div>
+      </div>
+
+      <div class="card p-8 reveal" style="transition-delay:0.05s">
+        <h3 class="font-heading font-bold text-white mb-2">📊 PPC & Paid Advertising</h3>
+        <p class="text-xs mb-5" style="color:var(--text-400)">Cross-platform paid media & performance campaigns</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-tag">Google PMax</span><span class="tech-tag">Meta Advantage+</span><span class="tech-tag">Amazon DSP</span><span class="tech-tag">Snap Ads</span><span class="tech-tag">TikTok Ads</span><span class="tech-tag">LinkedIn Ads</span><span class="tech-tag">Server-Side Tracking</span><span class="tech-tag">Meta CAPI</span><span class="tech-tag">Northbeam</span><span class="tech-tag">Google Shopping</span><span class="tech-tag">Dynamic Remarketing</span>
+        </div>
+      </div>
+
+      <div class="card p-8 reveal" style="transition-delay:0.1s">
+        <h3 class="font-heading font-bold text-white mb-2">🤖 AI Automation & MarTech</h3>
+        <p class="text-xs mb-5" style="color:var(--text-400)">Workflow automation, AI pipelines & integrations</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-tag">n8n</span><span class="tech-tag">Flowise</span><span class="tech-tag">Make.com</span><span class="tech-tag">Zapier</span><span class="tech-tag">OpenAI GPT-4 API</span><span class="tech-tag">LangChain</span><span class="tech-tag">Vapi.ai</span><span class="tech-tag">ElevenLabs</span><span class="tech-tag">WhatsApp API</span><span class="tech-tag">Python</span><span class="tech-tag">REST APIs</span><span class="tech-tag">Webhooks</span>
+        </div>
+      </div>
+
+      <div class="card p-8 reveal" style="transition-delay:0.15s">
+        <h3 class="font-heading font-bold text-white mb-2">📈 Analytics, BI & Social</h3>
+        <p class="text-xs mb-5" style="color:var(--text-400)">Data infrastructure, reporting & social management</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="tech-tag">GA4</span><span class="tech-tag">BigQuery</span><span class="tech-tag">GTM</span><span class="tech-tag">Looker Studio</span><span class="tech-tag">HubSpot</span><span class="tech-tag">Salesforce</span><span class="tech-tag">Meta Business Suite</span><span class="tech-tag">Hootsuite</span><span class="tech-tag">Buffer</span><span class="tech-tag">LSTM Modelling</span><span class="tech-tag">Cohort Analysis</span><span class="tech-tag">OKR Reporting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
+<section id="contact" class="relative py-28 px-6 overflow-hidden" style="background:#000008">
+  <div class="glow-orb w-96 h-96 top-0 left-0 opacity-50" style="background:rgba(0,229,160,0.06)"></div>
+  <div class="glow-orb w-80 h-80 bottom-0 right-0 opacity-50" style="background:rgba(123,92,240,0.08)"></div>
+
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label justify-center">Let's Connect</div>
+      <h2 class="section-title">Ready to Scale<br><span class="gradient-text">Your Brand?</span></h2>
+      <p class="section-sub mx-auto text-center">Available for full-time, contract, and fractional CMO engagements. No visa sponsorship required. Ready to start immediately.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Left: Info -->
+      <div class="reveal-left">
+        <!-- Availability badge -->
+        <div class="card p-6 mb-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-3 h-3 rounded-full" style="background:var(--mint);box-shadow:0 0 8px rgba(0,229,160,0.6);animation:pulse-dot 2s infinite"></div>
+            <span class="font-heading font-semibold text-white">Available for New Opportunities</span>
+          </div>
+          <p class="text-sm" style="color:var(--text-300)">Open to remote roles across US, UK, Canada, UAE, and APAC. Async communication expert — time-zone agnostic scheduling.</p>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="space-y-4 mb-8">
+          <a href="mailto:sameeralam.pbt1999@gmail.com" class="flex items-center gap-4 card p-4 group hover:border-mint/25 transition-colors">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(0,229,160,0.1)">📧</div>
+            <div>
+              <div class="text-xs" style="color:var(--text-400)">Email</div>
+              <div class="text-sm font-medium text-white group-hover:text-mint transition-colors" style="transition:color 0.2s">sameeralam.pbt1999@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+916395076874" class="flex items-center gap-4 card p-4 group">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-content flex-shrink-0" style="background:rgba(123,92,240,0.1)">📱</div>
+            <div>
+              <div class="text-xs" style="color:var(--text-400)">Phone / WhatsApp</div>
+              <div class="text-sm font-medium text-white group-hover:text-purple transition-colors" style="transition:color 0.2s">+91 6395076874</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/sameer-alam-seo/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 card p-4 group">
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(34,211,238,0.1)">💼</div>
+            <div>
+              <div class="text-xs" style="color:var(--text-400)">LinkedIn</div>
+              <div class="text-sm font-medium text-white" style="transition:color 0.2s">linkedin.com/in/sameer-alam-seo/</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Work Types -->
+        <div class="card p-6">
+          <h4 class="font-heading font-semibold text-white mb-4 text-sm">Open To</h4>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="text-xs flex items-center gap-2" style="color:var(--text-300)"><span style="color:var(--mint)">✓</span> Full-Time Remote</div>
+            <div class="text-xs flex items-center gap-2" style="color:var(--text-300)"><span style="color:var(--mint)">✓</span> Contract / Project</div>
+            <div class="text-xs flex items-center gap-2" style="color:var(--text-300)"><span style="color:var(--mint)">✓</span> Fractional CMO</div>
+            <div class="text-xs flex items-center gap-2" style="color:var(--text-300)"><span style="color:var(--mint)">✓</span> Consulting Retainer</div>
+            <div class="text-xs flex items-center gap-2" style="color:var(--text-300)"><span style="color:var(--mint)">✓</span> US / UK / Canada</div>
+            <div class="text-xs flex items-center gap-2" style="color:var(--text-300)"><span style="color:var(--mint)">✓</span> UAE / APAC / EMEA</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: WhatsApp CTA -->
+      <div class="reveal-right">
+        <!-- Main WhatsApp card -->
+        <div class="card p-10 text-center mb-6" style="border:1px solid rgba(37,211,102,0.25);background:linear-gradient(135deg,#0A1628,#0D1F10)">
+          <!-- WA Icon -->
+          <div style="width:80px;height:80px;background:linear-gradient(135deg,#25D366,#128C7E);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;box-shadow:0 0 40px rgba(37,211,102,0.3)">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h3 class="font-heading font-bold text-white text-2xl mb-3" style="letter-spacing:-0.03em">Let's Talk on WhatsApp</h3>
+          <p class="text-sm mb-8" style="color:var(--text-300);line-height:1.8;max-width:380px;margin-left:auto;margin-right:auto">
+            Skip the inbox queue. Message me directly on WhatsApp — I typically respond within <strong style="color:#fff">2 hours</strong> during business hours (IST/GMT/EST).
+          </p>
+          <a href="https://wa.me/916395076874?text=Hi%20Sameer!%20I%20found%20your%20portfolio%20and%20I%27d%20love%20to%20discuss%20a%20potential%20opportunity." target="_blank" rel="noopener noreferrer"
+            style="display:inline-flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.1rem;padding:18px 40px;border-radius:100px;width:100%;box-shadow:0 8px 30px rgba(37,211,102,0.3);transition:transform 0.2s,box-shadow 0.2s;text-decoration:none"
+            onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 14px 40px rgba(37,211,102,0.4)'"
+            onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 8px 30px rgba(37,211,102,0.3)'">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Message on WhatsApp
+          </a>
+          <p class="text-xs mt-4" style="color:var(--text-400)">+91 6395076874 · Available globally via WhatsApp</p>
+        </div>
+
+        <!-- Alternative contact -->
+        <div class="card p-6">
+          <p class="text-xs font-semibold mb-4" style="color:var(--text-400);text-transform:uppercase;letter-spacing:0.08em;font-family:'JetBrains Mono',monospace">Or reach out via</p>
+          <div class="grid grid-cols-2 gap-3">
+            <a href="mailto:sameeralam.pbt1999@gmail.com" class="flex items-center gap-3 p-3 rounded-xl transition-colors" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)" onmouseover="this.style.borderColor='rgba(0,229,160,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
+              <span style="font-size:1.2rem">📧</span>
+              <div>
+                <div class="text-xs font-semibold text-white">Email</div>
+                <div class="text-xs" style="color:var(--text-400)">sameeralam.pbt1999</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sameer-alam-seo/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl transition-colors" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)" onmouseover="this.style.borderColor='rgba(0,229,160,0.2)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'">
+              <span style="font-size:1.2rem">💼</span>
+              <div>
+                <div class="text-xs font-semibold text-white">LinkedIn</div>
+                <div class="text-xs" style="color:var(--text-400)">sameer-alam-seo</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+<footer style="background:#000005;border-top:1px solid rgba(255,255,255,0.05)">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center font-heading font-800 text-lg" style="background:linear-gradient(135deg,#00E5A0,#7B5CF0);color:#040810;font-weight:800">SA</div>
+          <div>
+            <div class="font-heading font-semibold text-white">Sameer Alam</div>
+            <div class="text-xs" style="color:var(--mint);font-family:'JetBrains Mono',monospace;font-size:0.65rem;letter-spacing:0.05em">SENIOR DIGITAL MARKETING LEADER</div>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed mb-5" style="color:var(--text-400)">Results-driven growth architect scaling brands globally with data, AI, and relentless execution. 9+ years · 7× ROAS · £3.5M/month revenue grown.</p>
+        <div class="flex flex-wrap gap-2">
+          <a href="https://drive.google.com/file/d/1jJkSzVa2HrFCOVWqfiYkemxSikXH1Llk/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;color:#C4B5FD;padding:7px 14px;border-radius:100px;border:1px solid rgba(123,92,240,0.35);background:transparent;text-decoration:none;transition:border-color 0.2s,background 0.2s" onmouseover="this.style.borderColor='rgba(123,92,240,0.8)';this.style.background='rgba(123,92,240,0.1)'" onmouseout="this.style.borderColor='rgba(123,92,240,0.35)';this.style.background='transparent'">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7B5CF0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="https://drive.google.com/drive/folders/1tkykQgfqm_2O8x16JQ-Q5qpr3n9eEqhV" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;color:#6EE7C7;padding:7px 14px;border-radius:100px;border:1px solid rgba(0,229,160,0.3);background:transparent;text-decoration:none;transition:border-color 0.2s,background 0.2s" onmouseover="this.style.borderColor='rgba(0,229,160,0.7)';this.style.background='rgba(0,229,160,0.07)'" onmouseout="this.style.borderColor='rgba(0,229,160,0.3)';this.style.background='transparent'">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00E5A0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            View Real Results
+          </a>
+          <a href="https://drive.google.com/file/d/185MBTa3CkM2hmS8SsE8bUYQdJTnFZfwE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;color:#FCA5A5;padding:7px 14px;border-radius:100px;border:1px solid rgba(239,68,68,0.25);background:rgba(239,68,68,0.05);text-decoration:none;transition:border-color 0.2s,background 0.2s" onmouseover="this.style.borderColor='rgba(239,68,68,0.6)';this.style.background='rgba(239,68,68,0.12)'" onmouseout="this.style.borderColor='rgba(239,68,68,0.25)';this.style.background='rgba(239,68,68,0.05)'">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#EF4444"><circle cx="12" cy="12" r="10" fill="none" stroke="#EF4444" stroke-width="2"/><polygon points="10,8 16,12 10,16" fill="#EF4444"/></svg>
+            Watch Video Intro
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-heading font-semibold text-white text-sm mb-4">Quick Links</h4>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#portfolio" class="footer-link">Portfolio</a>
+          <a href="#experience" class="footer-link">Experience</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-heading font-semibold text-white text-sm mb-4">Get In Touch</h4>
+        <div class="space-y-3">
+          <a href="mailto:sameeralam.pbt1999@gmail.com" class="footer-link flex items-center gap-2">📧 sameeralam.pbt1999@gmail.com</a>
+          <a href="tel:+916395076874" class="footer-link flex items-center gap-2">📱 +91 6395076874</a>
+          <a href="https://linkedin.com/in/sameer-alam-seo/" target="_blank" rel="noopener noreferrer" class="footer-link flex items-center gap-2">💼 linkedin.com/in/sameer-alam-seo/</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-wrap gap-4 justify-between items-center" style="border-top:1px solid rgba(255,255,255,0.05)">
+      <p class="text-xs" style="color:var(--text-400)">© 2026 Sameer Alam. All rights reserved. Built for global impact.</p>
+      <div class="flex gap-2 flex-wrap">
+        <span class="tech-tag text-xs">SEO</span>
+        <span class="tech-tag text-xs">PPC</span>
+        <span class="tech-tag text-xs">AI Automation</span>
+        <span class="tech-tag text-xs">D2C Growth</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════ SCRIPTS ═══════════════════════════════════════ -->
+<script>
+// ── MOBILE MENU ──────────────────────────────────────────────────
+const menuBtn = document.getElementById('menuBtn');
+const closeMenu = document.getElementById('closeMenu');
+const mobileMenu = document.getElementById('mobileMenu');
+function openMobileMenu(){ mobileMenu.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMobileMenu(){ mobileMenu.classList.remove('open'); document.body.style.overflow=''; }
+menuBtn.addEventListener('click', openMobileMenu);
+closeMenu.addEventListener('click', closeMobileMenu);
+
+// ── NAVBAR SCROLL ──────────────────────────────────────────────────
+const navbar = document.getElementById('navbar');
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  let current = '';
+  sections.forEach(s => { if(window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
+  navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#'+current); });
+}, {passive:true});
+
+// ── SCROLL REVEAL ──────────────────────────────────────────────────
+document.documentElement.classList.add('js-ready');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold:0.08, rootMargin:'0px 0px -20px 0px' });
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el => revealObs.observe(el));
+
+// ── SKILL BARS ──────────────────────────────────────────────────
+const skillObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      const fill = e.target.querySelector('.skill-fill');
+      if(fill){ const w = parseFloat(fill.dataset.width); fill.style.transform = `scaleX(${w})`; }
+      skillObs.unobserve(e.target);
+    }
+  });
+}, { threshold:0.5 });
+document.querySelectorAll('.skill-item').forEach(el => skillObs.observe(el));
+
+// ── CONTACT FORM ──────────────────────────────────────────────────
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  form.style.opacity = '0';
+  setTimeout(() => { form.classList.add('hidden'); success.classList.remove('hidden'); }, 400);
+}
+
+// ── SPACE STARFIELD BACKGROUND ────────────────────────────────────────────
+(function initStarfield(){
+  if(typeof THREE==='undefined') return;
+  const canvas=document.getElementById('heroCanvas');
+  if(!canvas) return;
+  const scene=new THREE.Scene();
+  const W=canvas.offsetWidth||window.innerWidth, H=canvas.offsetHeight||window.innerHeight;
+  const camera=new THREE.PerspectiveCamera(80,W/H,0.1,300);
+  camera.position.z=1;
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:false});
+  renderer.setSize(W,H); renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));
+  renderer.setClearColor(0x000000,0);
+
+  function starLayer(n,spread,size,col,op){
+    const arr=new Float32Array(n*3);
+    for(let i=0;i<n*3;i++) arr[i]=(Math.random()-0.5)*spread;
+    const g=new THREE.BufferGeometry();
+    g.setAttribute('position',new THREE.BufferAttribute(arr,3));
+    return new THREE.Points(g,new THREE.PointsMaterial({color:col,size,sizeAttenuation:false,transparent:true,opacity:op}));
+  }
+  const s1=starLayer(3500,140,0.7,0x8899BB,0.30);
+  const s2=starLayer(1400,100,1.1,0xDDEEFF,0.50);
+  const s3=starLayer(600, 80, 1.6,0xFFFFFF,0.65);
+  const s4=starLayer(90,  65, 2.2,0x00E5A0,0.55);
+  const s5=starLayer(70,  65, 1.9,0x9B8FFF,0.45);
+  const s6=starLayer(40,  55, 2.8,0x22D3EE,0.50);
+  scene.add(s1,s2,s3,s4,s5,s6);
+
+  // Shooting star line
+  const ssGeo=new THREE.BufferGeometry();
+  const ssArr=new Float32Array(6);
+  ssGeo.setAttribute('position',new THREE.BufferAttribute(ssArr,3));
+  const ssMat=new THREE.LineBasicMaterial({color:0xFFFFFF,transparent:true,opacity:0});
+  const ssLine=new THREE.Line(ssGeo,ssMat);
+  scene.add(ssLine);
+  let ssActive=false,ssX=0,ssY=0,ssNext=4;
+
+  let mx=0,my=0;
+  window.addEventListener('mousemove',e=>{
+    mx=(e.clientX/window.innerWidth-0.5)*0.2;
+    my=-(e.clientY/window.innerHeight-0.5)*0.2;
+  },{passive:true});
+
+  let t=0;
+  (function animate(){
+    requestAnimationFrame(animate); t+=0.003;
+    s1.rotation.y=t*0.006+mx*0.08; s1.rotation.x=my*0.05;
+    s2.rotation.y=t*0.010+mx*0.12; s2.rotation.x=my*0.08;
+    s3.rotation.y=t*0.014+mx*0.16; s3.rotation.x=my*0.10;
+    camera.position.x+=(mx*0.4-camera.position.x)*0.025;
+    camera.position.y+=(my*0.4-camera.position.y)*0.025;
+    camera.lookAt(0,0,0);
+    // Shooting star
+    ssNext-=0.003;
+    if(!ssActive&&ssNext<=0){
+      ssActive=true; ssX=(Math.random()-0.5)*60; ssY=15+Math.random()*20;
+      ssMat.opacity=0.85; ssNext=6+Math.random()*10;
+    }
+    if(ssActive){
+      ssX-=0.5; ssY-=0.25; ssMat.opacity-=0.018;
+      ssArr[0]=ssX;ssArr[1]=ssY;ssArr[2]=-15;
+      ssArr[3]=ssX+3;ssArr[4]=ssY+1.5;ssArr[5]=-15;
+      ssGeo.attributes.position.needsUpdate=true;
+      if(ssMat.opacity<=0) ssActive=false;
+    }
+    renderer.render(scene,camera);
+  })();
+
+  window.addEventListener('resize',()=>{
+    const nW=canvas.parentElement.offsetWidth,nH=canvas.parentElement.offsetHeight;
+    renderer.setSize(nW,nH); camera.aspect=nW/nH; camera.updateProjectionMatrix();
+  },{passive:true});
+})();
+
+// ── 3D PIXEL ASTRONAUT CHARACTER ──────────────────────────────────────────
+(function initCharacter(){
+  if(typeof THREE==='undefined') return;
+  const canvas=document.getElementById('charCanvas');
+  if(!canvas) return;
+  const W=canvas.clientWidth||460, H=canvas.clientHeight||520;
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(48,W/H,0.1,100);
+  camera.position.set(0.4,0,9);
+  camera.lookAt(0,0,0);
+
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  renderer.setSize(W,H); renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+  renderer.setClearColor(0x000000,0);
+
+  // Lights
+  scene.add(new THREE.AmbientLight(0x162240,2.0));
+  const sun=new THREE.DirectionalLight(0xFFFFFF,1.8); sun.position.set(-2,5,5); scene.add(sun);
+  const mintPt=new THREE.PointLight(0x00E5A0,3.5,16); mintPt.position.set(3,-2,3); scene.add(mintPt);
+  const purplePt=new THREE.PointLight(0x7B5CF0,2.5,12); purplePt.position.set(-3,3,-2); scene.add(purplePt);
+  const bluePt=new THREE.PointLight(0x22D3EE,1.5,10); bluePt.position.set(0,6,2); scene.add(bluePt);
+
+  const S=0.4; // voxel size
+  const vGeo=new THREE.BoxGeometry(S*0.88,S*0.88,S*0.88);
+  const mc={};
+  function mat(hex){
+    if(!mc[hex]){
+      const glow=[0x00E5A0,0x7B5CF0,0x00CFFF,0x22D3EE].includes(hex);
+      mc[hex]=new THREE.MeshPhongMaterial({color:hex,emissive:hex,emissiveIntensity:glow?0.55:0.07,shininess:glow?120:35,specular:0x334466});
+    }
+    return mc[hex];
+  }
+
+  // Color palette
+  const WH=0xD8E8FF,BL=0x00CFFF,MN=0x00E5A0,PU=0x8B5CF6,GR=0x4A5A6A,DK=0x080E1C;
+
+  // Voxel data [x, y, z, color] — astronaut facing -Z (toward viewer)
+  const V=[
+    // ── HELMET ──
+    [0,9,0,WH],[1,9,0,WH],[-1,9,0,WH],[0,9,-1,WH],[0,9,1,WH],
+    [-2,8,0,WH],[-1,8,-1,WH],[0,8,-1,WH],[1,8,-1,WH],[2,8,0,WH],
+    [-1,8,0,WH],[0,8,0,WH],[1,8,0,WH],[-1,8,1,WH],[0,8,1,WH],[1,8,1,WH],
+    // ── VISOR (glowing cyan) ──
+    [-2,7,-1,WH],[-1,7,-1,BL],[0,7,-1,BL],[1,7,-1,BL],[2,7,-1,WH],
+    [-2,7,0,WH], [-1,7,0,BL], [0,7,0,BL], [1,7,0,BL], [2,7,0,WH],
+    [-2,7,1,WH], [-1,7,1,WH],[0,7,1,WH],[1,7,1,WH],[2,7,1,WH],
+    // ── COLLAR ──
+    [-1,6,-1,GR],[0,6,-1,GR],[1,6,-1,GR],[-1,6,0,GR],[0,6,0,GR],[1,6,0,GR],
+    // ── SHOULDERS + UPPER BODY ──
+    [-3,5,-1,WH],[-2,5,-1,WH],[-1,5,-1,WH],[0,5,-1,WH],[1,5,-1,WH],[2,5,-1,WH],[3,5,-1,WH],
+    [-2,5,0,WH],[-1,5,0,WH],[0,5,0,WH],[1,5,0,WH],[2,5,0,WH],
+    // ── CHEST (mint circuit lines) ──
+    [-2,4,-1,WH],[-1,4,-1,WH],[0,4,-1,MN],[1,4,-1,WH],[2,4,-1,WH],
+    [-2,4,0,WH], [-1,4,0,MN],[0,4,0,WH],[1,4,0,MN],[2,4,0,WH],
+    // ── BELLY (purple panel) ──
+    [-2,3,-1,WH],[-1,3,-1,WH],[0,3,-1,WH],[1,3,-1,WH],[2,3,-1,WH],
+    [-2,3,0,WH],[-1,3,0,WH],[0,3,0,PU],[1,3,0,WH],[2,3,0,WH],
+    // ── ARMS ──
+    [-3,5,0,WH],[-3,4,0,WH],[-3,3,0,WH],[-3,2,0,MN],
+    [3,5,0,WH], [3,4,0,WH], [3,3,0,WH], [3,2,0,MN],
+    // ── HIPS ──
+    [-1,2,-1,WH],[0,2,-1,GR],[1,2,-1,WH],[-1,2,0,WH],[0,2,0,WH],[1,2,0,WH],
+    // ── LEGS ──
+    [-1,1,-1,WH],[-1,1,0,WH],[1,1,-1,WH],[1,1,0,WH],
+    // ── BOOTS ──
+    [-2,0,0,GR],[-1,0,0,GR],[-1,0,-1,GR],[0,0,-1,GR],
+    [1,0,-1,GR],[2,0,0,GR],[1,0,0,GR],[0,0,0,GR],
+    // ── JETPACK (z=+1, behind body) ──
+    [-1,5,1,PU],[0,5,1,DK],[1,5,1,PU],
+    [-1,4,1,PU],[0,4,1,DK],[1,4,1,PU],
+    [-1,3,1,PU],[0,3,1,DK],[1,3,1,PU],
+    [-1,2,1,GR],[0,2,1,MN],[1,2,1,GR],
+  ];
+
+  const charGroup=new THREE.Group();
+  V.forEach(([x,y,z,hex])=>{
+    const m=new THREE.Mesh(vGeo,mat(hex));
+    m.position.set(x*S,(y-4.5)*S,z*S);
+    charGroup.add(m);
+  });
+  charGroup.rotation.y=0.3; // slight initial angle to show depth
+  scene.add(charGroup);
+
+  // Holographic orbit rings
+  const rings=[];
+  [[2.6,0.013,0x00E5A0,0.40,Math.PI/2.5,0,0.005],
+   [3.1,0.009,0x7B5CF0,0.28,-Math.PI/3.2,Math.PI/5,-0.004],
+   [2.0,0.010,0x22D3EE,0.20,Math.PI/4,-Math.PI/6,0.003]
+  ].forEach(([r,tube,col,op,rx,ry,spd])=>{
+    const ring=new THREE.Mesh(new THREE.TorusGeometry(r,tube,8,80),
+      new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:op}));
+    ring.rotation.x=rx; ring.rotation.y=ry; ring.userData.spd=spd;
+    rings.push(ring); scene.add(ring);
+  });
+
+  // Floating data cubes (orbiting)
+  const dpData=[];
+  for(let i=0;i<22;i++){
+    const sz=0.045+Math.random()*0.055;
+    const m=new THREE.Mesh(new THREE.BoxGeometry(sz,sz,sz),
+      new THREE.MeshBasicMaterial({color:[0x00E5A0,0x7B5CF0,0x22D3EE,0xFFFFFF][i%4]}));
+    dpData.push({mesh:m,angle:(i/22)*Math.PI*2,r:2.2+Math.random()*1.2,spd:0.004+Math.random()*0.003,yi:(Math.random()-0.5)*3.5});
+    scene.add(m);
+  }
+
+  // Mouse parallax
+  let mx=0,my=0;
+  const homeEl=document.getElementById('home');
+  homeEl.addEventListener('mousemove',e=>{
+    mx=(e.clientX/window.innerWidth-0.5)*0.9;
+    my=-(e.clientY/window.innerHeight-0.5)*0.55;
+  },{passive:true});
+
+  let t=0;
+  (function animate(){
+    requestAnimationFrame(animate); t+=0.008;
+    // Float bob
+    charGroup.position.y=Math.sin(t)*0.18;
+    // Mouse-driven rotation (snaps back to slight y-offset)
+    charGroup.rotation.y+=(mx*1.0+0.3-charGroup.rotation.y)*0.06;
+    charGroup.rotation.x+=(-my*0.35-charGroup.rotation.x)*0.06;
+    // Rings spin
+    rings.forEach(r=>r.rotation.z+=r.userData.spd);
+    // Particles orbit
+    dpData.forEach(dp=>{
+      dp.angle+=dp.spd;
+      dp.mesh.position.set(Math.cos(dp.angle)*dp.r,dp.yi+Math.sin(dp.angle*0.6)*0.4,Math.sin(dp.angle)*dp.r);
+    });
+    // Thruster pulse
+    mintPt.intensity=2.8+Math.sin(t*5)*0.8;
+    purplePt.intensity=2.0+Math.sin(t*3+1)*0.5;
+    renderer.render(scene,camera);
+  })();
+
+  window.addEventListener('resize',()=>{
+    const nW=canvas.clientWidth,nH=canvas.clientHeight;
+    if(nW>0&&nH>0){renderer.setSize(nW,nH);camera.aspect=nW/nH;camera.updateProjectionMatrix();}
+  },{passive:true});
+})();
+</script>
+
+<!-- Schema.org Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sameer Alam",
+  "jobTitle": "Senior Digital Marketing & Growth Strategy Leader",
+  "description": "Results-driven Senior Digital Marketing Leader with 9+ years spanning Technical SEO, PPC, AI Automation, and D2C Growth Strategy across US, UK, and global markets.",
+  "email": "sameeralam.pbt1999@gmail.com",
+  "telephone": "+916395076874",
+  "url": "https://linkedin.com/in/sameer-alam-seo/",
+  "sameAs": ["https://linkedin.com/in/sameer-alam-seo/"],
+  "knowsAbout": ["Technical SEO","PPC Advertising","AI Marketing Automation","D2C Growth Strategy","Performance Marketing","Digital Marketing","Google Ads","Meta Ads","Content Strategy","Data Analytics"],
+  "alumniOf": {"@type":"CollegeOrUniversity","name":"Khandelwal College of Management & Science"}
+}
+</script>
+
+</body>
+</html>

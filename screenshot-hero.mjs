@@ -1,0 +1,15 @@
+import puppeteer from 'puppeteer';
+import { existsSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const dir = join(__dirname, 'temporary screenshots');
+if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
+const page = await browser.newPage();
+await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 1.5 });
+await page.goto('http://localhost:3000', { waitUntil: 'networkidle2', timeout: 30000 });
+await new Promise(r => setTimeout(r, 3000));
+await page.screenshot({ path: join(dir, 'screenshot-10-hero-viewport.png'), fullPage: false });
+await browser.close();
+console.log('✅ hero viewport saved');
